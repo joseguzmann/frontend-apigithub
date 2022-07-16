@@ -26,40 +26,48 @@
 
 /* Responsive Design Media Queries */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
     .profile-container {
-        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .picture-container {
-        display: inline-block;
+        grid-column: 1;
+        grid-row: 1;
     }
-    
+
     .profile-description {
-        display: inline-block;
-        background-color: #B491C8;
-        text-align: center;
-        padding: 5%;
+        grid-column: 1;
+        grid-row: 2;
+        padding-bottom: 0;
+    }
+
+    .github-icon {
+        padding-top: 5%;
+        width: 50%;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
+@media only screen and (max-width: 530px) {
+    .github-icon {
+        padding: 0;
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (max-width: 402px) {
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .picture-container {
+        vertical-align: middle;
+    }
+
+    .github-icon {
+        padding-bottom: 5%;
+    }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-}
