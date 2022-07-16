@@ -1,0 +1,13 @@
+.repo-title {
+    background-color: #3C1361;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: #BCA0DC;
+}
+
+.repo-description {
+    background-color: #B491C8;
+    padding: 10px;
+}
+

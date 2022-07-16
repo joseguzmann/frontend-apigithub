@@ -4,6 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
 
 }
+
 .picture-container {
     grid-column: 1;
 }
@@ -13,7 +14,6 @@
     background-color: #B491C8;
     text-align: center;
     padding: 5%;
-    font-size: 1.5vw;
 }
 
 .picture {
@@ -21,5 +21,45 @@
 }
 
 .github-icon {
-    width: 40%;
+    width: 35%;
+}
+
+/* Responsive Design Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .profile-container {
+        display: block;
+    }
+
+    .picture-container {
+        display: inline-block;
+    }
+    
+    .profile-description {
+        display: inline-block;
+        background-color: #B491C8;
+        text-align: center;
+        padding: 5%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }

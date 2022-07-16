@@ -1,3 +1,13 @@
 <div class="repositories-container" *ngIf="repositories !== undefined">
-    {{ repositories[0].name }}
+    <ng-template ngFor let-repo [ngForOf]="repositories" let-i="index">
+        <div class="repo-title">
+            {{ repo.name }}
+        </div>
+        <div class="repo-description">
+            <b>Full name: </b> {{ repo.full_name }}<br>
+            <b>Repository link: </b> <a href="{{ repo.html_url }}">Click here!</a><br>
+            <b>Created at: </b> {{ repo.created_at | date: 'dd-MM-yyyy' }}<br>
+            <b>Language: </b> {{ repo.language !== null ? repo.language : "Not defined" }}<br>
+        </div>
+    </ng-template>
 </div>
