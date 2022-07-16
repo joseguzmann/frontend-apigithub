@@ -1,3 +1,15 @@
-<div class="bg-secondary">
-    <p>profile works!</p>
+<div class="profile-container" *ngIf="profile !== undefined">
+    <div class="picture-container">
+        <img src="{{ profile.avatar_url }}" class="picture" alt="profile picture">
+    </div>
+    <div class="profile-description">
+        <b>Owner's name: </b> {{ profile.name }}<br>
+        <b>Username: </b> {{ profile.login }}<br>
+        <b>Github profile link: </b> <a href="{{ profile.html_url }}">Click here!</a><br>
+        <b>Location: </b> {{ profile.location }}<br>
+        <b>No. of public repositories: </b> {{ profile.public_repos }}<br>
+        <b>Followers: </b> {{ profile.followers }}<br>
+        <b>Following: </b> {{ profile.following }}<br><br>
+        <img src="../../../assets/github-icon.png" class="github-icon" alt="Github icon">
+    </div>
 </div>

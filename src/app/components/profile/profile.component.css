@@ -1,0 +1,25 @@
+.profile-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.picture-container {
+    grid-column: 1;
+}
+
+.profile-description {
+    grid-column: 2;
+    background-color: #B491C8;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.5vw;
+}
+
+.picture {
+    width: 100%;
+}
+
+.github-icon {
+    width: 40%;
+}
