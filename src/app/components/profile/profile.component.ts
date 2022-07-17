@@ -14,6 +14,7 @@ export class ProfileComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    // Insert user's data into profile
     this.apiService.getUser().subscribe((data) => {
       this.profile = data;
     });

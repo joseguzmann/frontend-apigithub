@@ -13,6 +13,7 @@ export class RepositoriesComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    // Inserts user's repositories list into repositories
     this.apiService.getRepositories().subscribe((data) => {
       this.repositories = data;
     });
