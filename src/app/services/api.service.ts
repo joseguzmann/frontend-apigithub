@@ -15,10 +15,14 @@ export class ApiService {
   getUserUrl = "https://api.github.com/users/joseguzmann";
   getRepositoriesUrl = "https://api.github.com/users/joseguzmann/repos";
 
+  // GET method to retrieve user information 
+  // Returns an Observable that pushes an HTTP response
   getUser(): Observable<User> {
     return this.http.get<User>(this.getUserUrl);
   }
 
+  // GET method to retrieve user's repositories list 
+  // Returns an Observable that pushes an HTTP response
   getRepositories(): Observable<RepositoriesList> {
     return this.http.get<RepositoriesList>(this.getRepositoriesUrl);
   }
